@@ -1,0 +1,146 @@
+:root {
+    --primary: #ffbf00;
+    --bg-dark: #382f32;
+    --light-gray: #cebe9c;
+    --silver: #C0C0C0;
+    --light-tan: #ffdc73;
+    --dark-font: #0f0f0f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: 'Lato', sans-serif;
+}
+
+nav a {
+    font-size: 20px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--silver);
+}
+
+nav {
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    gap: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+#hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+
+#hero img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 1px solid var(--primary);
+}
+
+#hero p {
+    color: var(--primary);
+    margin: 40px 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#info {
+    background-color: var(--silver);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    margin: 100px;
+    color: var(--dark-font);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell img {
+    margin-bottom: 5px;
+}
+
+.cell p {
+    text-align: center;
+}
+
+.divider {
+    width: 1px;
+    border: 1px solid var(--dark-font);
+    height: 100px;
+}
+
+#contact {
+    height: 500px;
+    background-color: var(--silver);
+    padding-top: 50px;
+}
+
+.chevron {
+    position: relative;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 6px;
+    height: 80px;
+}
+
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: var(--bg-dark);
+    transform: skew(0deg, 6deg);
+}
+
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: var(--bg-dark);
+    transform: skew(0deg, -6deg);
+}
+
+.contact-container {
+    margin-top: 70px;
+    width: 700px;
+    height: 200px;
+    background-color: var(--bg-dark);
+}
+
