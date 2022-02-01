@@ -5,6 +5,7 @@
     --silver: #C0C0C0;
     --light-tan: #ffdc73;
     --dark-font: #0f0f0f;
+    --orange: #b14300;
 }
 
 *,
@@ -15,9 +16,39 @@
   margin: 0;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--silver);
     font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    color: var(--dark-font);
+    margin: 20px 0px;
+    font-weight: 300;
+    font-size: 34px;
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    justify-content: flex-end;
+    height: 60px;
+    background: linear-gradient(
+        45deg, var(--primary), var(--orange));
+    align-items: center;
+    padding-right: 40px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+}
+
+.nav-links {
+    gap: 40px;
 }
 
 nav a {
@@ -27,26 +58,15 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--silver);
-}
-
-nav {
-    justify-content: flex-end;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    margin-right: 40px;
-    gap: 30px;
-}
-
-.flex {
-    display: flex;
+    color: var(--bg-dark);
 }
 
 #hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 560px;
+    background: var(--bg-dark);
 }
 
 #hero img {
@@ -101,18 +121,12 @@ nav {
     height: 100px;
 }
 
-#contact {
-    height: 500px;
-    background-color: var(--silver);
-    padding-top: 50px;
-}
-
 .chevron {
     position: relative;
     text-align: center;
     padding: 12px;
-    margin-bottom: 6px;
     height: 80px;
+    background: var(--silver);
 }
 
 .chevron:before {
@@ -137,10 +151,144 @@ nav {
     transform: skew(0deg, -6deg);
 }
 
-.contact-container {
-    margin-top: 70px;
-    width: 700px;
-    height: 200px;
+#contact {
+    height: 550px;
     background-color: var(--bg-dark);
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
 }
 
+.contact-container {
+    width: 700px;
+    height: 400px;
+    background-image: linear-gradient(
+        135deg, var(--primary), var(--orange));
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#subject {
+    height: 170px;
+    width: 400px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid var(--bg-dark);
+    resize: none;
+    outline: none;
+}
+
+.text-input {
+    background: none;
+    height: 40px;
+    border: 1px solid var(--bg-dark);
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+label {
+    color: var(--dark-font);
+    margin-right: 10px;
+}
+
+#submit-btn {
+    background: none;
+    color: var(--dark-font);
+    font-size: 16px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--bg-dark);
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 5px;
+    color: var(--bg-dark);
+}
+
+textarea::placeholder {
+    padding-top: 2px;
+    padding-left: 10px;
+    color: var(--bg-dark);
+}
+
+textarea:focus,
+input:focus {
+    padding-left: 8px;
+    color: var(--dark-font);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder{
+    color: transparent;
+  }
+
+footer {
+    background-image: linear-gradient(
+        135deg, var(--primary), var(--orange));
+}
+
+.footer-container {
+    height: 250px;
+    justify-content: center;   
+    align-items: center;
+    font-size: 24px;
+    color: var(--dark-font);
+    margin-right: 98px;
+}
+
+.footer-info {
+    padding-right: 60px;
+}
+
+.footer-info p {
+    padding-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark-font);
+    margin-bottom: 15px;
+}
+
+.copyright {
+    justify-content: center;
+    font-size: 18px;
+    height: 30px;
+}
+
+.footer-links i {
+    color: var(--dark-font);
+}
+
+.footer-links i:hover {
+    color: var();
+}
+
+.icon {
+    font-size: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: rotate(360deg) scale(1.2);
+}
