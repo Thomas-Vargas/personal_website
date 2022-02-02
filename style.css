@@ -331,3 +331,35 @@ footer a {
 }
 
 /* About Page */
+#about {
+    margin: 40px;
+}
+
+.about-image {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+}
+
+.about-wrapper {
+    gap: 60px;
+}
+
+.about-txt h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.about-txt div {
+    width: 700px;
+    background-color: var(--bg-dark);
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+}
+.about-txt p {
+    font-size: 22px;
+    text-align: center;
+    color: var(--primary);
+}
