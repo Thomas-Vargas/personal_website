@@ -1,11 +1,19 @@
 :root {
     --primary: #ffbf00;
-    --bg-dark: #382f32;
+    --gold: #ca8d22;
+    --dark: #153327;
+    --bg-dark: #181818;
     --light-gray: #cebe9c;
     --silver: #C0C0C0;
     --light-tan: #ffdc73;
+    --orange: #dd4200;
+
     --dark-font: #0f0f0f;
-    --orange: #b14300;
+    --teal: #2C806F;
+    --light-blue: #4382C7;
+    --white: #F9F6EE;
+    --emerald: #42c787;
+
 }
 
 *,
@@ -17,7 +25,7 @@
 }
 
 body {
-    background-color: var(--silver);
+    background-color: var(--white);
     font-family: 'Lato', sans-serif;
     font-weight: 300;
 }
@@ -44,11 +52,15 @@ h2 {
     display: flex;
 }
 
+input, textarea {
+    color: var(--white);
+    padding: 0px 5px;
+}
+
 nav {
     justify-content: flex-end;
     height: 60px;
-    background: linear-gradient(
-        45deg, var(--primary), var(--orange));
+    background-color: var(--emerald);
     align-items: center;
     padding-right: 40px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
@@ -60,12 +72,12 @@ nav {
 
 nav a {
     font-size: 20px;
-    color: var(--primary);
+    color: var(--dark-font);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: var(--bg-dark);
+    color: var(--white);
 }
 
 #hero {
@@ -73,26 +85,26 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 570px;
-    background: var(--bg-dark);
+    background: var(--emerald);
 }
 
 #hero img {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--dark-font);
 }
 
 #hero p {
-    color: var(--primary);
+    color: var(--dark-font);
     margin: 40px 200px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
 
 #info {
-    background-color: var(--silver);
-    height: 250px;
+    background-color: var(--white);
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,14 +115,14 @@ nav a:hover {
     color: var(--dark-font);
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cell {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .cell img {
@@ -119,12 +131,15 @@ nav a:hover {
 
 .cell p {
     text-align: center;
+    color: var(--dark-font);
+    font-size: 18px;
 }
 
 .divider {
     width: 1px;
+    margin-top: 20px;
     border: 1px solid var(--dark-font);
-    height: 100px;
+    height: 120px;
 }
 
 .chevron {
@@ -132,7 +147,7 @@ nav a:hover {
     text-align: center;
     padding: 12px;
     height: 80px;
-    background: var(--silver);
+    background: var(--white);
 }
 
 .chevron:before {
@@ -142,7 +157,7 @@ nav a:hover {
     left: 0;
     height: 100%;
     width: 50%;
-    background: var(--bg-dark);
+    background: var(--dark-font);
     transform: skew(0deg, 6deg);
 }
 
@@ -153,23 +168,22 @@ nav a:hover {
     right: 0;
     height: 100%;
     width: 50%;
-    background: var(--bg-dark);
+    background: var(--dark-font);
     transform: skew(0deg, -6deg);
 }
 
 #contact {
     height: 550px;
-    background-color: var(--bg-dark);
+    background-color: var(--white);
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .contact-container {
     width: 700px;
     height: 400px;
-    background-image: linear-gradient(
-        135deg, var(--primary), var(--orange));
+    background-image: linear-gradient(0deg, var(--dark) 0%, var(--emerald) 60%);
     border-radius: 15px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
     display: flex;
@@ -211,14 +225,20 @@ label {
 
 #submit-btn {
     background: none;
-    color: var(--dark-font);
+    color: var(--white);
     font-size: 16px;
     height: 50px;
     width: 100px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border: 2px solid var(--bg-dark);
+    border: 1px solid var(--bg-dark);
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+}
+
+#submit-btn:hover {
+    transform: scale(1.05);
+    color: var(--white);
+    background: var(--emerald);
 }
 
 input[type="text"]::placeholder,
@@ -236,7 +256,8 @@ textarea::placeholder {
 textarea:focus,
 input:focus {
     padding-left: 8px;
-    color: var(--dark-font);
+    color: var(--white);
+    font-size: 14px;
 }
 
 input:focus::placeholder,
@@ -245,10 +266,8 @@ textarea:focus::placeholder{
 }
 
 /* Footer */
-
 footer {
-    background-image: linear-gradient(
-        135deg, var(--primary), var(--orange));
+    background: var(--emerald);
 }
 
 .footer-container {
@@ -285,7 +304,7 @@ footer a {
 }
 
 .footer-links i:hover {
-    color: var();
+    color: var(--white);
 }
 
 .icon {
@@ -318,6 +337,7 @@ footer a {
     min-width: 0;
     min-height: 0;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
+    border-radius: 5px;
 }
 
 .grid-item img {
@@ -344,6 +364,8 @@ footer a {
 
 .about-wrapper {
     gap: 60px;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-txt h1 {
@@ -353,7 +375,7 @@ footer a {
 
 .about-txt div {
     width: 700px;
-    background-color: var(--bg-dark);
+    background-color: var(--emerald);
     padding: 60px;
     border-radius: 15px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 15px;
@@ -361,5 +383,5 @@ footer a {
 .about-txt p {
     font-size: 22px;
     text-align: center;
-    color: var(--primary);
+    color: var(--dark-font);
 }
