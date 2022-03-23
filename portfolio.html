@@ -17,9 +17,9 @@
         <nav class="flex">
             <a href="index.html"><img src="/images/logo2.svg" alt="logo" class="logo"></a>
             <div class="nav-links flex">
-                <a href="index.html">Home</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="about.html">About</a>
+                <a href="index.html" class="changeable">Home</a>
+                <a href="portfolio.html" class="changeable">Portfolio</a>
+                <a href="about.html" class="changeable">About</a>
             </div>
         </nav>
     </div>
@@ -30,19 +30,50 @@
     <section id="portfolio">
         <div class="portfolio-grid">
             <div class="grid-item">
-                <a href="https://thomas-vargas.github.io/calculator/" target="blank"><img src="/images/calculator.png" alt="calculator project"></a>
+                <a href="https://thomas-vargas.github.io/calculator/" target="blank">
+                    <img src="/images/calculator.png" alt="calculator project">
+                    <div class="text">
+                        <h4>Calculator</h4>
+                        <p>Simple calculator performing basic math operations using HTML, CSS and JavaScript.</p>
+                    </div>
+                </a>
             </div>
             <div class="grid-item">
-                <a href="https://thomas-vargas.github.io/etch_a_sketch/" target="blank"><img src="/images/etch.png" alt="etch-a-sketch project"></a>
+                <a href="https://thomas-vargas.github.io/etch_a_sketch/" target="blank">
+                    <img src="/images/etch.png" alt="etch-a-sketch project">
+                    <div class="text">
+                        <h4>Etch-a-Sketch</h4>
+                        <p>Etch-a-sketch project for practicing DOM manipulation using HTML, CSS and JavaScript.</p>
+                    </div>
+                </a>
             </div>
             <div class="grid-item">
-                <a href="https://thomas-vargas.github.io/odin-landing-page/" target="blank"><img src="/images/landing_page.png" alt="landing page project"></a>
+                <a href="https://thomas-vargas.github.io/odin-landing-page/" target="blank">
+                    <img src="/images/landing_page.png" alt="landing page project">
+                    <div class="text">
+                        <h4>Landing Page</h4>
+                        <p>A simple landing page practice landing page using HTML and CSS.</p>
+                    </div>
+                </a>
             </div>
             <div class="grid-item">
-                <a href="https://thomas-vargas.github.io/hulu-webpage-clone/" target="blank"><img src="/images/hulu.png" alt="hulu project"></a>
+                <a href="https://thomas-vargas.github.io/hulu-webpage-clone/" target="blank">
+                    <img src="/images/hulu.png" alt="hulu project">
+                    <div class="text">
+                        <h4>Hulu Clone</h4>
+                        <p>A clone of Hulu's front page to practice implementing a design with HTML CSS and a little JavaScript for login button functionality. 
+                        </p>
+                    </div>
+                </a>
             </div>
             <div class="grid-item">
-                <a href="https://thomas-vargas.github.io/rock_paper_scissors/" target="blank"><img src="/images/rps.png" alt="rock paper scissors project"></a>
+                <a href="https://thomas-vargas.github.io/rock_paper_scissors/" target="blank">
+                    <img src="/images/rps.png" alt="rock paper scissors project">
+                    <div class="text">
+                        <h4>Rock Paper Scissors</h4>
+                        <p>Rock paper scissors game that compares user input to random computer selection. Simple UI using HTML and CSS with JavaScript implenting game functionality</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -69,6 +100,7 @@
         </div>
     </section>
 
+    <div class="bar"></div>
     <footer>
         <div class="footer-container flex">
             <a href="index.html">
@@ -99,5 +131,7 @@
             <p>Copyright &copy 2022 | Thomas Vargas</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

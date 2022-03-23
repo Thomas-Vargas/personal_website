@@ -27,7 +27,7 @@
      inkscape:snap-others="true"
      inkscape:zoom="3"
      inkscape:cx="42"
-     inkscape:cy="56.5"
+     inkscape:cy="35.833333"
      inkscape:window-width="1364"
      inkscape:window-height="697"
      inkscape:window-x="0"
@@ -58,10 +58,10 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#f9f6ee;stroke:#ffffff;stroke-width:0.999999;stroke-opacity:1;fill-opacity:1"
-       d="m 55,0 3.75,15 H 67.058594 82 L 71.585938,67.078125 79.898438,100 H 80 L 100,0 H 95 60 Z"
-       transform="scale(0.26458333)"
-       id="path9471" />
+       id="path9471"
+       style="fill:#f9f6ee;stroke:#f9f6ee;stroke-width:0.999999;stroke-opacity:1;fill-opacity:1"
+       d="M 60 0 L 63.75 15 L 65 15 L 67.058594 15 L 82 15 L 74.189453 54.056641 L 82.296875 88.513672 L 100 0 L 95 0 L 60 0 z "
+       transform="scale(0.26458333)" />
     <path
        style="fill:#0f0f0f;stroke:#0f0f0f;stroke-width:0.999999;stroke-opacity:1;fill-opacity:1"
        d="M 0,0 V 15 H 53.75 L 50,0 Z"
