@@ -384,13 +384,20 @@ i {
 	transform-origin: 50%;
 	background: rgba(255,255,255,0.9);	
 	opacity: 0;
-	transition: all 0.4s ease-in;		
+	transition: all 0.4s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+    flex-direction: column;
+    outline: 2px var(--emerald) solid;
+    border-radius: 5px;
 }
 
 .grid-item .text h4 {
     margin: 0;
     color: var(--dark-font);
     font-size: 22px;
+    font-weight: 400;
 }
 
 .grid-item:hover .text {
@@ -399,7 +406,15 @@ i {
 }
 
 .grid-item .text p {
-    color: var(--dark-font)
+    color: var(--dark-font);
+    font-size: 16px;
+}
+
+.grid-item .tech h5 {
+    color: var(--dark-font);
+    font-size: 19px;
+    padding: 5px;
+    font-weight: 400;
 }
 
 /* About Page */
