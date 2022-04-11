@@ -518,7 +518,12 @@ i {
     }
 
     .grid-item img {
-        max-height: 170px;
+        max-height: 190px;
         max-width: 295px;
+    }
+    
+    .grid-item {
+        min-height: 190px;
+        min-width: 295px;
     }
 }
