@@ -521,4 +521,8 @@ i {
         max-height: 200px;
         max-width: 295px;
     }
+
+    .grid-item {
+        box-shadow: none;
+    }
 }
