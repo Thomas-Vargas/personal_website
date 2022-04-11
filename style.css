@@ -516,9 +516,9 @@ i {
     #contact {
         height: 500px;
     }
-    
-    .grid-item {
-        min-height: 190px;
-        min-width: 295px;
+
+    .grid-item img {
+        max-height: 200px;
+        max-width: 295px;
     }
 }
