@@ -341,7 +341,7 @@ i {
 
 /* Portfolio page */
 #portfolio {
-    margin: 40px;
+    margin: 40px 40px 0px 40px;
 }
 
 .portfolio-grid {
@@ -515,5 +515,10 @@ i {
 
     #contact {
         height: 500px;
+    }
+
+    .grid-item img {
+        max-height: 200px;
+        max-width: 295px;
     }
 }
