@@ -128,7 +128,6 @@ nav a:hover {
 }
 
 .info-container {
-    margin: 100px;
     color: var(--dark-font);
     gap: 20px;
     justify-content: center;
@@ -451,4 +450,58 @@ i {
     font-size: 25px;
     text-align: center;
     color: var(--dark-font);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 400px) {
+    #hero img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #hero p {
+        margin: 40px;
+    }
+
+    .footer-container {
+        height: 500px;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer-container .divider {
+        height: 1px;
+        width: 50px;
+    }
+
+    .info-container {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .info-container .divider {
+        height: 0px;
+        width: 0px;
+        border: none;
+    }
+
+    #info {
+        height: 800px;
+    }
+
+    .contact-container {
+        width: 360px;
+    }
+
+    .contact-container #message {
+        width: 300px;
+    }
+
+    nav {
+        padding-right: 20px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
 }
